@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discord Server
+    url: http://discord.elfhosted.com
+    about: Our primary support channel
+  # - name: Discourse Forums
+  #   url: https://forum.funkypenguin.co.nz/
+  #   about: For asyncronous, long-lived discussions
