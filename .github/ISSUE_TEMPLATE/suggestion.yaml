@@ -19,7 +19,7 @@ body:
       label: 🤪 Sanity check
       description: Let's first confirm that this is not a suggestion which has previously been discussed / proposed
       options:
-        - label: I have searched and confirmed no existing [open](https://github.com/funkypenguin/geek-cookbook/issues?q=is%3Aissue) / [closed](https://github.com/funkypenguin/geek-cookbook/issues?q=is%3Aissue+is%3Aclosed) issues, or [open](https://github.com/funkypenguin/geek-cookbook/pulls?q=is%3Apr) / [closed](https://github.com/funkypenguin/geek-cookbook/pulls?q=is%3Apr+is%3Aclosed) PRs exist for this suggestion
+        - label: I have searched and confirmed no existing [open](https://github.com/elfhosted/enhancements/issues?q=is%3Aissue) / [closed](https://github.com/elfhosted/enhancements/issues?q=is%3Aissue+is%3Aclosed) issues, or [open](https://github.com/elfhosted/enhancements/pulls?q=is%3Apr) / [closed](https://github.com/elfhosted/enhancements/pulls?q=is%3Apr+is%3Aclosed) PRs exist for this app
           required: true       
           
   - type: textarea

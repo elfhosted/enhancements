@@ -20,7 +20,7 @@ body:
       label: 🤪 Sanity check
       description: Let's confirm that this is not a app which has previously been discussed / proposed
       options:
-        - label: I have searched and confirmed no existing [open](https://github.com/eflhosted/enhancements/issues?q=is%3Aissue) / [closed](https://github.com/elfhosted/enhancements/issues?q=is%3Aissue+is%3Aclosed) issues, or [open](https://github.com/funkypenguin/geek-cookbook/pulls?q=is%3Apr) / [closed](https://github.com/funkypenguin/geek-cookbook/pulls?q=is%3Apr+is%3Aclosed) PRs exist for this app
+        - label: I have searched and confirmed no existing [open](https://github.com/elfhosted/enhancements/issues?q=is%3Aissue) / [closed](https://github.com/elfhosted/enhancements/issues?q=is%3Aissue+is%3Aclosed) issues, or [open](https://github.com/elfhosted/enhancements/pulls?q=is%3Apr) / [closed](https://github.com/elfhosted/enhancements/pulls?q=is%3Apr+is%3Aclosed) PRs exist for this app
           required: true       
         - label: I have confirmed that the app is actively supported by its developers (_i.e., not deprecated or abandoned_)
           required: true
