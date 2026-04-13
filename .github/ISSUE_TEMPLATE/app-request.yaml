@@ -42,6 +42,35 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: license
+    attributes:
+      label: 📄 License
+      description: What license does the project use? ElfHosted can only host apps whose license permits managed/SaaS hosting. Check the LICENSE file in the project's repo.
+      options:
+        - MIT
+        - Apache 2.0
+        - BSD (2 or 3-clause)
+        - ISC
+        - MPL 2.0
+        - Unlicense
+        - GPL v2
+        - GPL v3
+        - AGPL v3
+        - Other (please specify in description)
+        - No license / Unknown
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: license_check
+    attributes:
+      label: ✅ License compatibility
+      description: Confirm the app's license allows managed hosting
+      options:
+        - label: I have confirmed that the app's license permits commercial/managed hosting (not "personal use only", SSPL, BSL, Elastic License, or similar restrictive licenses)
+          required: true
+
   - type: input
     id: discord_id
     attributes:
