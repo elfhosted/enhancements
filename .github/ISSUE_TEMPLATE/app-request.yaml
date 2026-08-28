@@ -77,3 +77,27 @@ body:
       label: 💬 Your Discord username
       description: If you've joined our [Discord server](http://discord.elfhosted.com), enter your username here so that we can collaborate effectively
       placeholder: BobTheBuilder#4567
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ### 📋 For ElfHosted staff — shipping checklist
+
+        An app is not shipped when the container builds. Each of the following
+        fails **silently** if skipped — the app simply appears undocumented or
+        unnamed to the customer, with nothing reporting a problem:
+
+        - [ ] **Docs page** at `docs/app/<slug>.md`, in the `elfhosted/docs.elfhosted.com` repo
+        - [ ] **Slug matches everywhere** — the docs filename, the store product slug, and
+              the Gandalf app-catalog key must be the SAME string. A page at
+              `mediaflow-proxy.md` is invisible to anything looking for `mediaflowproxy`.
+        - [ ] **`mkdocs.yml` nav entry** — a page absent from `nav:` does not appear on the site
+        - [ ] **`DOCS-SPLIT-MANIFEST.md` row** — page → A/B/C/D disposition → one-line rationale
+        - [ ] **`visibility:` frontmatter** for C/D, then `python3 scripts/gen-split-redirects.py`
+        - [ ] **App catalog entry** in `elfhosted/tenants` `app-catalog.yaml` — label, blurb,
+              `docs:` slug. Without one the app is hidden from `/my-account/apps/` entirely
+              (it will show up in Gandalf's `uncatalogued` list)
+        - [ ] **Icon** at `icons.elfhosted.com` — add a square PNG to
+              `containers-private/apps/homer/png/` and rebuild the `icons` container.
+              Missing icons fall back to a letter-mark
